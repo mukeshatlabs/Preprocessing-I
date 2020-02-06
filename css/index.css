@@ -107,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -133,5 +129,101 @@ table {
 html,
 body {
   height: 100%;
-  background-color: red;
+}
+.container {
+  width: 50%;
+  margin: auto;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 30px;
+}
+.navigation a {
+  text-decoration: none;
+  padding: 0 20px;
+}
+@media (max-width: 700px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation a {
+    padding: 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0px;
+}
+.intro .title {
+  font-size: 80px;
+  text-align: center;
+  padding: 20px;
+}
+.intro .p1 {
+  font-size: 20px;
+  color: red;
+}
+.intro .p2 {
+  font-size: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid red;
+}
+.intro .p3 {
+  font-size: 25px;
+  padding: 10px;
+}
+.intro .headerimage {
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+}
+@media (max-width: 700px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+.aboutskills .abouttitle {
+  font-size: 25px;
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
+.aboutskills .abouttext {
+  width: 90%;
+  padding-top: 10px;
+}
+.aboutskills .skillstitle {
+  font-size: 25px;
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
+.aboutskills ol {
+  width: 90%;
+  padding-top: 10px;
+  list-style-position: inside;
+}
+.workexperience .sectiontitle {
+  font-size: 25px;
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
+.workexperience .company1 {
+  font-size: 20px;
+  width: 90%;
+  padding-top: 10px;
+}
+.contact-section .contacttitle {
+  font-size: 25px;
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+  margin-bottom: 10px;
 }

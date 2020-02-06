@@ -33,7 +33,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	// list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -55,6 +55,123 @@ table {
 
 html, body {
 	height: 100%;
-	background-color: red;
 }
 
+@titlefont: 25px;
+
+.container{
+	width: 50%;
+	margin: auto;
+}
+
+.navigation {	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 30px;
+	a{
+		text-decoration: none;
+		padding: 0 20px;
+
+	}
+
+	@media(max-width: 700px) {
+			display: flex;
+			flex-direction: column;
+		
+			a{
+				padding: 20px;
+				border-bottom: 1px solid black;
+				text-align: center;
+			}
+	}
+}
+
+.intro{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 50px 0px;
+
+	.title{
+		font-size: 80px;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.p1{
+		font-size: 20px;
+		color: red;
+	}
+	.p2{
+		font-size: 60px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid red;
+	}
+	.p3{
+		font-size: 25px;
+		padding: 10px;
+	}
+
+	.headerimage{
+		width: 300px;
+		height: 350px;
+		padding: 20px;
+	}
+
+
+	@media(max-width: 700px) {
+		flex-direction: column;
+	}
+}
+
+.aboutskills{
+
+	.abouttitle{
+		font-size: @titlefont;	
+		padding: 10px 0;
+		border-bottom: 1px solid red;
+	}
+	.abouttext{
+		width: 90%;
+		padding-top: 10px;
+	}
+	.skillstitle{
+		font-size: @titlefont;
+		padding: 10px 0;
+		border-bottom: 1px solid red;
+	}
+	ol{
+		width: 90%;
+		padding-top: 10px;
+		list-style-position: inside;
+	}
+
+}
+
+.workexperience{
+
+	.sectiontitle{
+		font-size: @titlefont;	
+		padding: 10px 0;
+		border-bottom: 1px solid red;
+	}
+	.company1{
+		font-size: 20px;	
+		width: 90%;
+		padding-top: 10px;
+		// font-weight: bold;
+	}
+
+}
+.contact-section{
+	.contacttitle{
+		font-size: @titlefont;	
+		padding: 10px 0;
+		border-bottom: 1px solid red;
+		margin-bottom: 10px;
+	}
+}
